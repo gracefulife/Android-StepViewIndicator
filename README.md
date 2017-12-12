@@ -1,5 +1,5 @@
 # Android-StepViewIndicator
-
+![Example image](./1.png) ![Example image](./2.png)
 
 ## Install
 
