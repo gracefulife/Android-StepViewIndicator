@@ -1,16 +1,26 @@
 # Android-StepViewIndicator
 
 
+## Install
+
+add your build.gradle
+```
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+dependencies {
+  implementation 'com.github.KimKyung-man:Android-StepViewIndicator:v1.0.0'
+}
+```
+
+  
 ## Usage
-
-**Gradle**
-```gradle
-implementation 'com.github.KimKyung-man:Android-StepViewIndicator:v1.0.0'
-````
-
-
-
-```xml
+layout.xml
+```
  <com.anton46.stepsview.StepsView
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/stepsView"
@@ -19,7 +29,8 @@ implementation 'com.github.KimKyung-man:Android-StepViewIndicator:v1.0.0'
         />
 ```        
 
-```java
+SomeActivity.java
+```
 indicatorSteps.setLabels(new String[]{"test1", "test2", "test3", "test4"})
     .setProgressColorIndicator(ContextCompat.getColor(this, R.color.colorPrimary))
     .setBarColorIndicator(ContextCompat.getColor(this, R.color.colorAccent))
@@ -27,4 +38,8 @@ indicatorSteps.setLabels(new String[]{"test1", "test2", "test3", "test4"})
     .drawView();
 ```
 
+## Improvements
+the original version is https://github.com/anton46/Android-StepsView.
 
+## License
+Apache 2.0
