@@ -21,12 +21,11 @@ dependencies {
 ## Usage
 layout.xml
 ```
- <com.anton46.stepsview.StepsView
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/stepsView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+<xyz.gracefulife.stepindicator.StepsView
+    android:id="@+id/indicator_steps"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:visibility="visible" />
 ```        
 
 SomeActivity.java
